@@ -15,6 +15,7 @@ h1{
   margin-top: 25px;
   margin-bottom: 25px;
   font-size: 3em;
+  font-weight: bold;
   letter-spacing: 5px;
 }
 
@@ -32,4 +33,29 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* image container */
+
+.image-container{
+  margin: 10px 30%;
+}
+
+.image-container img{
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* larger mobile devices */
+@media screen { min-width: 600px;}{
+
+h1{
+  font-size: 1em;
+
+}
+
+.image-container{
+  margin: 10px;
+}
+
 }
