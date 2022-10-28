@@ -47,15 +47,14 @@ h1{
 }
 
 /* larger mobile devices */
-@media screen { min-width: 600px;}{
+@media screen and (max-width: 600px){
 
-h1{
-  font-size: 1em;
+  h1{
+    font-size: 1em;
+  }
 
-}
-
-.image-container{
-  margin: 10px;
-}
+  .image-container{
+    margin: 10px;
+  }
 
 }
