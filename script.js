@@ -1,4 +1,4 @@
-const imageContainer = document.getElementById('imageContainer');
+const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
 
@@ -9,6 +9,9 @@ const apiKey = "Bc5E6X6RWj8_vk7UlthqhdGIvgmsu8dO0yJq22RGF7Y";
 const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 let photosArray = ['some value'];
+
+
+console.log(`first array ${photosArray}`);
 
 // API get photos
 async function getPhotos(){
