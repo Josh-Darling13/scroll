@@ -10,20 +10,10 @@ const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&coun
 
 let photosArray = ['some value'];
 
-
-console.log(`first array ${photosArray}`);
-
-// API get photos
-async function getPhotos(){
-
-    try{
-        const response = await fetch(apiURL);
-        photosArray = await response.json();
-        console.log(photosArray);
-        displayPhotos();
-
-    } catch(error){
-        console.log(error);
+function setAttributes(element, attributes){
+    for (const key in attributes){
+        element.setAttribute(key, attributes[key]);
+        // LEFT OFF HERE
     }
 }
 
@@ -43,6 +33,22 @@ function displayPhotos(){
         imageContainer.appendChild(item);
     } );
     }
+
+// API get photos
+async function getPhotos(){
+
+    try{
+        const response = await fetch(apiURL);
+        photosArray = await response.json();
+        console.log(photosArray);
+        displayPhotos();
+
+    } catch(error){
+        console.log(error);
+    }
+}
+
+
 
 // call to API function
 
