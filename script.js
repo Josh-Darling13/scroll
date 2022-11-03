@@ -4,7 +4,7 @@ const loader = document.getElementById('loader');
 let photosArray = ['some value'];
 
 // Unsplash API
-const count = 10;
+const count = 30;
 const apiKey = "Bc5E6X6RWj8_vk7UlthqhdGIvgmsu8dO0yJq22RGF7Y";
 const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
@@ -12,8 +12,6 @@ const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&coun
 function imageLoaded(){
     console.log('image loaded');
 }
-
-
 
 function setAttributes(element, attributes){
     for (const key in attributes){
